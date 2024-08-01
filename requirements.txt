@@ -1,0 +1,8 @@
+streamlit
+python-dotenv
+pdf2image
+Pillow
+google.generativeai
+fitz
+frontend
+PyMuPDF
