@@ -57,8 +57,8 @@ def clean_and_format_json(response_text):
     return None
 
 # Streamlit App
-st.set_page_config(page_title="ATS Resume Expert")
-st.header("ATS Resume Parser")
+st.set_page_config(page_title="Extracting Data From Resume in JSON Format")
+st.header("Resume Parser")
 
 uploaded_file = st.file_uploader("Upload your resume (PDF)...", type=["pdf"])
 
