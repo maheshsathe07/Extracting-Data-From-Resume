@@ -1,8 +1,8 @@
-# ATS Resume Expert
+# Extracting Data From Resume
 
 ## Overview
 
-ATS Resume Expert is a web application built using Streamlit that parses resumes from PDF files and converts them into JSON format. The application uses Google Gemini API for processing and analyzing the resume content. This tool helps in transforming resumes into structured JSON data for easier integration and analysis.
+Extracting Data From Resume is a web application built using Streamlit that parses resumes from PDF files and converts them into JSON format. The application uses Google Gemini API for processing and analyzing the resume content. This tool helps in transforming resumes into structured JSON data for easier integration and analysis.
 
 ## Features
 
