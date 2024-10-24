@@ -1,3 +1,15 @@
+---
+title: PDF To Data Converter
+emoji: 🌍
+colorFrom: purple
+colorTo: gray
+sdk: streamlit
+sdk_version: 1.39.0
+app_file: app.py
+pinned: false
+short_description: Solution to extract data from pdf into a structured format.
+---
+
 # Extracting Data From Resume
 
 ## Overview
