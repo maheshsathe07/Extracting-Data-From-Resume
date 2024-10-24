@@ -5,5 +5,5 @@ Pillow
 google.generativeai
 fitz
 frontend
-PyMuPDF==1.24.12
+pymupdf==1.18.19
 tools
