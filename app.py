@@ -24,15 +24,26 @@ def get_gemini_response(pdf_content, prompt):
 def input_pdf_setup(uploaded_file):
     if uploaded_file is not None:
         try:
+            # Open the uploaded file as a PDF document
             pdf_document = fitz.open(stream=uploaded_file.read(), filetype="pdf")
-            first_page = pdf_document.load_page(0)
+
+            # Extract the first page of the PDF
+            first_page = pdf_document[0]
+
+            # Convert the first page to an image
             pix = first_page.get_pixmap()
 
+            # Create a BytesIO object to save the image
             img_byte_arr = io.BytesIO()
+
+            # Convert the pixmap to an image using PIL
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+
+            # Save the image as JPEG in memory
             img.save(img_byte_arr, format='JPEG')
             img_byte_arr = img_byte_arr.getvalue()
 
+            # Encode the image to base64 format
             pdf_parts = [
                 {
                     "mime_type": "image/jpeg",
@@ -57,8 +68,8 @@ def clean_and_format_json(response_text):
     return None
 
 # Streamlit App
-st.set_page_config(page_title="Extracting Data From Resume in JSON Format")
-st.header("Resume Parser")
+st.set_page_config(page_title="ATS Resume Expert")
+st.header("ATS Resume Parser")
 
 uploaded_file = st.file_uploader("Upload your resume (PDF)...", type=["pdf"])
 
