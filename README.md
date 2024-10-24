@@ -1,13 +1,13 @@
 ---
-title: PDF To Data Converter
-emoji: 🌍
-colorFrom: purple
-colorTo: gray
+title: Extracting Data From Resume
+emoji: 🐠
+colorFrom: pink
+colorTo: green
 sdk: streamlit
 sdk_version: 1.39.0
 app_file: app.py
 pinned: false
-short_description: Solution to extract data from pdf into a structured format.
+short_description: Resume Parser
 ---
 
 # Extracting Data From Resume
